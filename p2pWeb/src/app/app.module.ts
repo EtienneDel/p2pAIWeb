@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Guard } from './helpers/guard.helper';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingModule } from './pages/landing/landing.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LandingModule
   ],
-  providers: [],
+  providers: [
+    Guard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
