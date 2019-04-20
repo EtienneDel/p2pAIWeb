@@ -1,0 +1,57 @@
+.main {
+  background-color: #281a79;
+  width: 100vw;
+  height: calc(100vh - 75px);
+}
+
+.electricity {
+  position: absolute;
+  width: 150px;
+  height: calc(100vh - 75px);
+  left: 100px;
+  top: 75px;
+}
+
+.brain {
+  position: absolute;
+  width: 1041px;
+  height: 352px;
+  left: calc(50vw - 520.5px);
+  top: 190px;
+}
+
+.txt {
+  position: absolute;
+  width: 583px;
+  height: 43px;
+  left: calc(50vw - 291.5px);
+  top: 650px;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.button {
+  position: absolute;
+  width: 250px;
+  height: 75px;
+  left: calc(50vw - 125px);
+  top: 814px;
+  background: #c21264;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #ffffff;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: normal;
+  margin: 0;
+}
