@@ -1,14 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LandComponent } from './land.component';
-import { MatButtonModule } from '@angular/material';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { LandComponent } from "@p2p/components/land/land.component";
 
 @NgModule({
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   declarations: [LandComponent],
   exports: [LandComponent],
-  entryComponents: [LandComponent],
+  entryComponents: [LandComponent]
 })
-export class LandModule { }
+export class LandModule {}
