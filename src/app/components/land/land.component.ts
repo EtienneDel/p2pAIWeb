@@ -6,5 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./land.component.scss"]
 })
 export class LandComponent {
+  displayLeft: boolean = false;
+  displayRight: boolean = false;
+
   constructor() {}
 }

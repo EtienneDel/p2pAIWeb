@@ -69,15 +69,6 @@
   margin: 0;
 }
 
-.table {
-  position: absolute;
-  top: 112vh;
-  left: calc(50vw - 35vw);
-  width: 70vw;
-  display: table;
-  border-spacing: 50px 50px;
-}
-
 .row {
   display: table-row;
 }
@@ -122,4 +113,39 @@
   width: 0px;
   height: 100px;
   border-right: 2px solid white;
+}
+
+.bigLine {
+  position: absolute;
+  left: calc(50vw - 1px);
+  top: 115vh;
+  width: 0px;
+  height: 80vh;
+  border-right: 2px solid white;
+}
+
+.left {
+  position: absolute;
+  top: 111.5vh;
+  left: calc(50vw - 500px);
+  width: 500px;
+}
+
+.right {
+  position: absolute;
+  top: 111.5vh;
+  left: 50vw;
+  width: 500px;
+}
+
+.tableLeft {
+  width: 400px;
+  display: table;
+  border-spacing: 50px 50px;
+}
+
+.tableRight {
+  width: 400px;
+  display: table;
+  border-spacing: 50px 50px;
 }
