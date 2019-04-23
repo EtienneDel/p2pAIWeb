@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { SignDialogComponent } from "../signDialog/signDialog.component";
+import { MatDialog } from "@angular/material";
 
 @Component({
   selector: "app-navbar",
@@ -6,5 +8,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./navBar.component.scss"]
 })
 export class NavBarComponent {
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(SignDialogComponent, {
+      width: "675px",
+      data: {},
+      autoFocus: false
+    });
+  }
 }
