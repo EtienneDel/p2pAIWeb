@@ -1,13 +1,13 @@
 .main {
   background-color: #281a79;
-  width: 100vw;
-  height: calc(100vh - 75px);
+  height: calc(200vh - 75px);
+  box-sizing: border-box;
 }
 
 .electricity {
   position: absolute;
   width: 150px;
-  height: calc(100vh - 75px);
+  height: calc(200vh - 75px);
   left: 100px;
   top: 75px;
 }
@@ -22,11 +22,9 @@
 
 .txt {
   position: absolute;
-  width: 583px;
-  height: 43px;
-  left: calc(50vw - 291.5px);
+  width: 75vw;
+  left: calc(50vw - 37.5vw);
   top: 650px;
-
   font-weight: bold;
   font-size: 36px;
   line-height: normal;
@@ -53,4 +51,75 @@
   font-size: 36px;
   line-height: normal;
   margin: 0;
+}
+
+.features {
+  position: absolute;
+  width: 200px;
+  height: 43px;
+  left: calc(50vw - 100px);
+  top: 105vh;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.table {
+  position: absolute;
+  top: 112vh;
+  left: calc(50vw - 35vw);
+  width: 70vw;
+  display: table;
+  border-spacing: 50px 50px;
+}
+
+.row {
+  display: table-row;
+}
+
+.detail {
+  background-color: #1867d3;
+  display: table-cell;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detailContent {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 150px;
+}
+
+.detailImg {
+  position: absolute;
+  width: 75px;
+  top: calc(50% - 37.5px);
+  left: 20px;
+}
+
+.detailTxt {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 135px;
+  width: 250px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.line {
+  position: absolute;
+  left: 115px;
+  top: calc(50% - 50px);
+  width: 0px;
+  height: 100px;
+  border-right: 2px solid white;
 }
