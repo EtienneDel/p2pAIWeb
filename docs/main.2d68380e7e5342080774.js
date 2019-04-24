@@ -47267,10 +47267,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "featImg"],
-                ["src", "../../../assets/images/settings.svg"]
-              ],
+              [["class", "featImg"], ["src", "assets/images/settings.svg"]],
               null,
               null,
               null,
@@ -47356,7 +47353,7 @@
               "img",
               [
                 ["class", "detailImg"],
-                ["src", "../../../assets/images/graphics-card.svg"]
+                ["src", "assets/images/graphics-card.svg"]
               ],
               null,
               null,
@@ -47448,10 +47445,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/checklist.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/checklist.svg"]],
               null,
               null,
               null,
@@ -47542,10 +47536,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/clock.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/clock.svg"]],
               null,
               null,
               null,
@@ -47636,10 +47627,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/money.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/money.svg"]],
               null,
               null,
               null,
@@ -47727,10 +47715,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "featImg"],
-                ["src", "../../../assets/images/flex.svg"]
-              ],
+              [["class", "featImg"], ["src", "assets/images/flex.svg"]],
               null,
               null,
               null,
@@ -47814,10 +47799,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/factory.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/factory.svg"]],
               null,
               null,
               null,
@@ -47908,10 +47890,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/github.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/github.svg"]],
               null,
               null,
               null,
@@ -48002,10 +47981,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/docker.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/docker.svg"]],
               null,
               null,
               null,
@@ -48096,10 +48072,7 @@
               null,
               0,
               "img",
-              [
-                ["class", "detailImg"],
-                ["src", "../../../assets/images/bell.svg"]
-              ],
+              [["class", "detailImg"], ["src", "assets/images/bell.svg"]],
               null,
               null,
               null,
@@ -48173,7 +48146,7 @@
               "img",
               [
                 ["class", "electricity"],
-                ["src", "../../assets/images/electricity.svg"]
+                ["src", "assets/images/electricity.svg"]
               ],
               null,
               null,
@@ -48189,7 +48162,7 @@
               null,
               0,
               "img",
-              [["class", "brain"], ["src", "../../assets/images/brain.svg"]],
+              [["class", "brain"], ["src", "assets/images/brain.svg"]],
               null,
               null,
               null,
