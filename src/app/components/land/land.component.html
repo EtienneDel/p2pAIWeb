@@ -10,15 +10,12 @@
     class="left"
     (mouseenter)="displayRight = true"
     (mouseleave)="displayRight = false"
-    *ngIf="!displayLeft"
   >
-    hello
-    <div
-      class="tableLeft"
-      *ngIf="displayLeft"
-      (mouseenter)="displayLeft = true"
-      (mouseleave)="displayLeft = false"
-    >
+    <div class="featContainer" *ngIf="!displayLeft">
+      <p class="featTxt">I want to give my power !</p>
+      <img class="featImg" src="../../../assets/images/flex.svg" />
+    </div>
+    <div class="tableLeft" *ngIf="displayLeft" [@animStateXRL]="'in'">
       <div class="row">
         <div class="detail">
           <div class="detailContent">
@@ -65,10 +62,12 @@
     class="right"
     (mouseenter)="displayLeft = true"
     (mouseleave)="displayLeft = false"
-    *ngIf="!displayRight"
   >
-    hello
-    <div class="tableRight" *ngIf="displayRight">
+    <div class="featContainer" *ngIf="!displayRight">
+      <p class="featTxt">I want to train !</p>
+      <img class="featImg" src="../../../assets/images/settings.svg" />
+    </div>
+    <div class="tableRight" *ngIf="displayRight" [@animStateXLR]="'in'">
       <div class="row">
         <div class="detail">
           <div class="detailContent">

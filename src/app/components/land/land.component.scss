@@ -129,6 +129,8 @@
   top: 111.5vh;
   left: calc(50vw - 500px);
   width: 500px;
+  height: 86vh;
+  align-items: center;
 }
 
 .right {
@@ -136,6 +138,7 @@
   top: 111.5vh;
   left: 50vw;
   width: 500px;
+  height: 86vh;
 }
 
 .tableLeft {
@@ -148,4 +151,23 @@
   width: 400px;
   display: table;
   border-spacing: 50px 50px;
+}
+
+.featContainer {
+  position: absolute;
+  top: calc(50% - 183.5px);
+  width: 100%;
+}
+
+.featTxt {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.featImg {
+  width: 256px;
+  margin: auto;
+  display: block;
 }
