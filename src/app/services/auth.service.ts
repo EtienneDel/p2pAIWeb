@@ -5,6 +5,8 @@ import * as firebase from "firebase/app";
 
 @Injectable()
 export class AuthService {
+  userEmail: string = "";
+
   constructor(public router: Router, public auth: AngularFireAuth) {}
 
   githubLogin() {
@@ -13,10 +15,12 @@ export class AuthService {
       .auth()
       .signInWithPopup(provider)
       .then(result => {
-        let token = result.credential.accessToken;
-        let user = result.user;
-        console.log("token" + token);
-        console.log("user" + user.email);
+        // let token = result.credential.accessToken;
+        // let user = result.user;
+        this.userEmail = result.user.email;
+        // console.log('token ' + token);
+        // console.log('user ' + user.email);
+        console.log(this.userEmail);
       })
       .catch(error => {
         var errorCode = error.code;

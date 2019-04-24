@@ -10,7 +10,6 @@ import { environment } from "../environments/environment";
 import { AppRoutingModule } from "@p2p/app.routing";
 import { AppComponent } from "@p2p/app.component";
 import { LandingModule } from "@p2p/pages/landing/landing.module";
-import { SignDialogModule } from "./components/signDialog/signDialog.module";
 import { AuthService } from "./services/auth.service";
 
 @NgModule({
@@ -20,7 +19,6 @@ import { AuthService } from "./services/auth.service";
     BrowserAnimationsModule,
     AppRoutingModule,
     LandingModule,
-    SignDialogModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule
