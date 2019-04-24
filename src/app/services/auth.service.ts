@@ -1,87 +1,30 @@
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import * as auth0 from "auth0-js";
+import { AngularFireAuth } from "@angular/fire/auth";
+import * as firebase from "firebase/app";
 
 @Injectable()
 export class AuthService {
-  private _idToken: string;
-  private _accessToken: string;
-  private _expiresAt: number;
+  constructor(public router: Router, public auth: AngularFireAuth) {}
 
-  auth0 = new auth0.WebAuth({
-    clientID: "27t2rL57PIxzFRXzBHdK8B0ekeCscLm7",
-    domain: "dev-llor9-dl.eu.auth0.com",
-    responseType: "token id_token",
-    redirectUri: "http://localhost:4200/",
-    scope: "openid"
-  });
-
-  constructor(public router: Router) {
-    this._idToken = "";
-    this._accessToken = "";
-    this._expiresAt = 0;
-  }
-
-  get accessToken(): string {
-    return this._accessToken;
-  }
-
-  get idToken(): string {
-    return this._idToken;
-  }
-
-  public login(): void {
-    this.auth0.authorize();
-  }
-
-  public handleAuthentication(): void {
-    this.auth0.parseHash((err, authResult) => {
-      if (authResult && authResult.accessToken && authResult.idToken) {
-        window.location.hash = "";
-        this.localLogin(authResult);
-        this.router.navigate([""]);
-      } else if (err) {
-        this.router.navigate([""]);
-        console.log(err);
-      }
-    });
-  }
-
-  private localLogin(authResult): void {
-    // Set the time that the access token will expire at
-    const expiresAt = authResult.expiresIn * 1000 + Date.now();
-    this._accessToken = authResult.accessToken;
-    this._idToken = authResult.idToken;
-    this._expiresAt = expiresAt;
-  }
-
-  public renewTokens(): void {
-    this.auth0.checkSession({}, (err, authResult) => {
-      if (authResult && authResult.accessToken && authResult.idToken) {
-        this.localLogin(authResult);
-      } else if (err) {
-        alert(
-          `Could not get a new token (${err.error}: ${err.error_description}).`
-        );
-        this.logout();
-      }
-    });
-  }
-
-  public logout(): void {
-    // Remove tokens and expiry time
-    this._accessToken = "";
-    this._idToken = "";
-    this._expiresAt = 0;
-
-    this.auth0.logout({
-      return_to: window.location.origin
-    });
-  }
-
-  public isAuthenticated(): boolean {
-    // Check whether the current time is past the
-    // access token's expiry time
-    return this._accessToken && Date.now() < this._expiresAt;
+  githubLogin() {
+    let provider = new firebase.auth.GithubAuthProvider();
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then(result => {
+        let token = result.credential.accessToken;
+        let user = result.user;
+        console.log("token" + token);
+        console.log("user" + user.email);
+      })
+      .catch(error => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+      });
   }
 }

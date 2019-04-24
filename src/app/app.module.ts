@@ -2,6 +2,10 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { Guard } from "@p2p/helpers/guard.helper";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { environment } from "../environments/environment";
 
 import { AppRoutingModule } from "@p2p/app.routing";
 import { AppComponent } from "@p2p/app.component";
@@ -16,7 +20,10 @@ import { AuthService } from "./services/auth.service";
     BrowserAnimationsModule,
     AppRoutingModule,
     LandingModule,
-    SignDialogModule
+    SignDialogModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [Guard, AuthService],
   bootstrap: [AppComponent]

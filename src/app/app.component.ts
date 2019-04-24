@@ -9,7 +9,5 @@ import { AuthService } from "./services/auth.service";
 export class AppComponent {
   title = "p2pWeb";
 
-  constructor(public auth: AuthService) {
-    console.log(auth.isAuthenticated());
-  }
+  constructor() {}
 }
