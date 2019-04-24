@@ -124,21 +124,21 @@
   border-right: 2px solid white;
 }
 
-.left {
+.left,
+.right {
   position: absolute;
   top: 111.5vh;
-  left: calc(50vw - 500px);
   width: 500px;
   height: 86vh;
   align-items: center;
 }
 
+.left {
+  left: calc(50vw - 500px);
+}
+
 .right {
-  position: absolute;
-  top: 111.5vh;
   left: 50vw;
-  width: 500px;
-  height: 86vh;
 }
 
 .tableLeft {

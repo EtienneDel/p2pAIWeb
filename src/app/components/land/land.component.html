@@ -12,8 +12,8 @@
     (mouseleave)="displayRight = false"
   >
     <div class="featContainer" *ngIf="!displayLeft">
-      <p class="featTxt">I want to give my power !</p>
-      <img class="featImg" src="../../../assets/images/flex.svg" />
+      <p class="featTxt">I want to train !</p>
+      <img class="featImg" src="../../../assets/images/settings.svg" />
     </div>
     <div class="tableLeft" *ngIf="displayLeft" [@animStateXRL]="'in'">
       <div class="row">
@@ -64,8 +64,8 @@
     (mouseleave)="displayLeft = false"
   >
     <div class="featContainer" *ngIf="!displayRight">
-      <p class="featTxt">I want to train !</p>
-      <img class="featImg" src="../../../assets/images/settings.svg" />
+      <p class="featTxt">I want to use my power !</p>
+      <img class="featImg" src="../../../assets/images/flex.svg" />
     </div>
     <div class="tableRight" *ngIf="displayRight" [@animStateXLR]="'in'">
       <div class="row">
@@ -89,7 +89,6 @@
       <div class="row">
         <div class="detail">
           <div class="detailContent">
-            <!-- TODO: Add docker logo in svg -->
             <img class="detailImg" src="../../../assets/images/docker.svg" />
             <div class="line"></div>
             <p class="detailTxt">Facilitate the training process</p>

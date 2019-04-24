@@ -25,8 +25,6 @@
 .pricing,
 .signup,
 .signin {
-  position: absolute;
-  width: 105px;
   height: 30px;
   top: 22.5px;
   font-family: Roboto Mono;
@@ -38,22 +36,7 @@
   margin: 0;
   line-height: 30px;
   cursor: default;
-}
-
-.details {
-  right: 406px;
-}
-
-.pricing {
-  right: 281px;
-}
-
-.signup {
-  right: 137.5px;
-}
-
-.signin {
-  right: 12.5px;
+  flex: auto;
 }
 
 .line {
@@ -63,4 +46,13 @@
   right: 261.25px;
   top: 12.5px;
   border-right: 1px solid #cac4c4;
+}
+
+.rightMenu {
+  position: absolute;
+  top: 22.5px;
+  right: 0;
+  display: flex;
+  height: 30px;
+  width: 515px;
 }
