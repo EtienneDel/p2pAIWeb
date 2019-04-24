@@ -46957,7 +46957,7 @@
           encapsulation: 0,
           styles: [
             [
-              ".nav[_ngcontent-%COMP%]{background-color:#1867d3;height:75px}.title[_ngcontent-%COMP%]{position:absolute;width:146px;height:50px;left:12.5px;top:12.5px;font-family:'Roboto Mono';font-style:normal;font-weight:700;font-size:48px;color:#fff;text-shadow:0 4px 4px rgba(0,0,0,.25);margin:0;line-height:50px;cursor:default}.details[_ngcontent-%COMP%], .pricing[_ngcontent-%COMP%], .signin[_ngcontent-%COMP%]{height:30px;top:22.5px;font-family:Roboto Mono;font-style:normal;font-weight:700;font-size:24px;color:#cac4c4;margin:0;line-height:30px;cursor:default;flex:auto}.line[_ngcontent-%COMP%]{position:absolute;width:0;height:50px;right:202.5px;top:12.5px;border-right:1px solid #cac4c4}.rightMenu[_ngcontent-%COMP%]{position:absolute;top:22.5px;right:0;display:flex;height:30px;width:450px}"
+              '.nav[_ngcontent-%COMP%]{background-color:#1867d3;height:75px}.title[_ngcontent-%COMP%]{position:absolute;width:146px;height:50px;left:12.5px;top:12.5px;font-family:"Roboto Mono";font-style:normal;font-weight:700;font-size:48px;color:#fff;text-shadow:0 4px 4px rgba(0,0,0,.25);margin:0;line-height:50px;cursor:default}.details[_ngcontent-%COMP%], .pricing[_ngcontent-%COMP%], .signin[_ngcontent-%COMP%]{height:30px;top:22.5px;font-family:Roboto Mono;font-style:normal;font-weight:700;font-size:24px;color:#cac4c4;margin:0;line-height:30px;cursor:default;flex:auto}.line[_ngcontent-%COMP%]{position:absolute;width:0;height:50px;right:202.5px;top:12.5px;border-right:1px solid #cac4c4}.rightMenu[_ngcontent-%COMP%]{position:absolute;top:22.5px;right:0;display:flex;height:30px;width:450px}'
             ]
           ],
           data: {}
